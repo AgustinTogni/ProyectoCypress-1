@@ -5,7 +5,7 @@ const home = new PageIDCrt
 describe('Casos con ID = CRT', () => {
 
     // ID de caso: CRT-001
-    it('Funcionamiento del boton "SEGUIR COMPRANDO"', () =>{
+    it('Funcionamiento del boton "SEGUIR COMPRANDO"', () => {
         cy.visit('https://compragamer.com/?tipo_pago=3&listado_prod=&seccion=11')
         cy.get('.mat-button-wrapper > span').click()
         cy.get(':nth-child(1) > .centerMobile > .center > a > .pointer > .ng-lazyloaded').should('exist')
